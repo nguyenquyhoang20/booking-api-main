@@ -57,7 +57,7 @@ cd booking-api-main
    php artisan serve
    ```
 
-## 📖 Xem trực tiếp Endpoints
+##  Xem trực tiếp Endpoints
 Khi Laravel Server lắng nghe trên cổng 8000, toàn bộ thông số Request / Response được tự động cập nhật tại:
  **[http://127.0.0.1:8000/docs/api](http://127.0.0.1:8000/docs/api)**
 
