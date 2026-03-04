@@ -2,7 +2,7 @@
 
 Hệ thống Booking API được xây dựng chuyên sâu dựa trên framework **Laravel hiện đại**, cung cấp bộ RESTful API chuẩn mực, hiệu suất cao phục vụ cho tính năng quản lý cơ sở lưu trú (khách sạn, homestay, resort) và đặt lịch phòng (Booking) đa nền tảng.
 
-## 🚀 Tính năng nổi bật
+##  Tính năng nổi bật
 
 - **Authentication toàn diện**: Quản lý định danh an toàn qua `laravel/sanctum` (Token-based).
 - **Phân luồng đặc quyền**: API phục vụ với kiến trúc phân lớp tự động cho từng nhóm đối tượng:
@@ -13,13 +13,13 @@ Hệ thống Booking API được xây dựng chuyên sâu dựa trên framework
 - **Media Engine mạnh mẽ**: Áp dụng thư viện `spatie/laravel-medialibrary` hỗ trợ upload hình ảnh phòng, phân loại Collection, tối ưu dung lượng và thứ tự.
 - **Data mồi chuẩn Việt Nam**: Database Seeder tập trung giả lập các chuỗi khách sạn/địa danh sát với môi trường Việt Nam (Đà Lạt, Hà Nội, v.v).
 
-## 📦 Yêu cầu kỹ thuật
+##  Yêu cầu kỹ thuật
 - PHP 8.3+
 - Composer
 - MySQL / PostgreSQL
 - Node.js & npm (cho công cụ build Vite Frontend nếu cần)
 
-## 🛠️ Hướng dẫn khởi chạy
+##  Hướng dẫn khởi chạy
 
 Clone cấu trúc dự án từ GitHub:
 ```bash
@@ -59,7 +59,7 @@ cd booking-api-main
 
 ## 📖 Xem trực tiếp Endpoints
 Khi Laravel Server lắng nghe trên cổng 8000, toàn bộ thông số Request / Response được tự động cập nhật tại:
-👉 **[http://127.0.0.1:8000/docs/api](http://127.0.0.1:8000/docs/api)**
+ **[http://127.0.0.1:8000/docs/api](http://127.0.0.1:8000/docs/api)**
 
-## 📜 License
+##  License
 Dự án được bảo lưu mọi quyền (All Rights Reserved).
