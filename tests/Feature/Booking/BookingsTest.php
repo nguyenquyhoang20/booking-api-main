@@ -190,3 +190,29 @@ it('allows user to post rating for their booking', function (): void {
         ])
         ->assertOk();
 });
+
+it('verifies booking has a default pending status', function (): void {
+    $user = User::factory()->user()->create();
+    /** @phpstan-ignore variable.undefined */
+    $apartment = createApartment();
+
+    $bookingData = [
+        'apartment_id' => $apartment->id,
+        'start_date' => now()->addDay(),
+        'end_date' => now()->addDays(2),
+        'guests_adults' => 2,
+        'guests_children' => 1,
+    ];
+
+    /** @phpstan-ignore variable.undefined */
+    $this->actingAs($user)
+        ->postJson(route('bookings.store'), $bookingData)
+        ->assertCreated();
+
+    $this->assertDatabaseHas('bookings', [
+        'apartment_id' => $apartment->id,
+        'user_id' => $user->id,
+        'status' => 'pending',
+    ]);
+});
+

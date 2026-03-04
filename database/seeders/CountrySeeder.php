@@ -15,14 +15,14 @@ final class CountrySeeder extends Seeder
     public function run(): void
     {
         Country::create([
-            'name' => 'United States',
-            'lat' => 37.09024,
-            'long' => -95.712891,
+            'name' => 'Việt Nam',
+            'lat' => 14.058324,
+            'long' => 108.277199,
         ]);
         Country::create([
-            'name' => 'United Kingdom',
-            'lat' => 55.378051,
-            'long' => -3.435973,
+            'name' => 'Nhật Bản',
+            'lat' => 36.204824,
+            'long' => 138.252924,
         ]);
     }
 }

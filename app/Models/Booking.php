@@ -76,6 +76,7 @@ final class Booking extends Model
         'total_price',
         'rating',
         'review_comment',
+        'status',
     ];
 
     protected $casts = [
